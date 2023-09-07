@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Layout Con Tablas #1</title>
+</head>
+<body>
+
+<style>
+
+     table, th, td {
+        border: 4px solid rgb(211, 30, 30);
+        border-collapse: collapse;
+    }
+    .titulo {
+        background-color: #142d3d;
+        color: white;
+        line-height: 70px;
+        font-size: 24px;
+    }
+
+
+    .items1 {
+        width: 15%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .textoytitulo {
+        vertical-align: top ;
+        padding-top: 13px;
+        white-space: nowrap;
+    }
+
+    .items2 {
+        background-color: #d87111;
+        width: 21%;
+        color: white;
+        text-align: center;
+        line-height: 2.7;
+    }
+
+    .final {
+        background-color: #0c0d0e;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+</style>
+
+<table border="1">
+    <tr>
+        <th colspan="3" class="titulo">
+            Welcome to EDUCBA
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" class="items1">
+            <a href="#">Home</a> <br>
+            <a href="#">About</a> <br>
+            <a href="#">Data science</a> <br>
+            <a href="#">Career</a> <br>
+            <a href="#">Contact Us</a>  <br> .
+        </td>
+
+        <td rowspan="1" class="textoytitulo">
+            <strong style="font-size: 22px;">WHO IS EDUCBA?</strong> <br> <br>
+            Learn Graphic designing, Animation, Game Development, Video Editing <br> & more with our Online Certification Courses.
+        </td>
+
+        <td class="items2" >
+            <strong>Courses </strong> <br>
+            Marketing <br>
+            Excel <br>
+            Design
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="final">
+            © 2019 - EDUCBA. ALL RIGHTS RESERVED
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
